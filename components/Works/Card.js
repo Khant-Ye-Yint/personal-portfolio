@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import moment from 'moment/moment';
 
 const Card = ({ onShow, chunk, setCurrentId, id }) => {
@@ -15,7 +15,7 @@ const Card = ({ onShow, chunk, setCurrentId, id }) => {
 			>
 				<div className='relative w-full h-72'>
 					<Image
-						src={`http://${chunk.fields.image.fields.file.url}`}
+						src={`http:${chunk.fields.image.fields.file.url}`}
 						alt={chunk.fields.image.fields.title}
 						layout='fill'
 						objectFit='cover'

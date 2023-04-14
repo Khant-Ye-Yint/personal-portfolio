@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 
 import { MdClose } from 'react-icons/md';
 import moment from 'moment';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 
 const Modal = ({ show, onClose, data, currentId }) => {
 	const [isBrowser, setIsBrowser] = useState(false);
@@ -27,9 +27,9 @@ const Modal = ({ show, onClose, data, currentId }) => {
 							onClick={onClose}
 						/>
 					</div>
-					<div className='relative w-full h-80'>
+					<div className='relative w-96 h-80'>
 						<Image
-							src={`http://${data[currentId].fields.image.fields.file.url}`}
+							src={`http:${data[currentId].fields.image.fields.file.url}`}
 							alt={data[currentId].fields.image.fields.title}
 							layout='fill'
 							objectFit='cover'
