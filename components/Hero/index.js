@@ -22,7 +22,7 @@ const Hero = () => {
 				<div className='border-none rounded-full ring-8 ring-green'>
 					<Image
 						src={MyPic}
-						className='object-cover object-center w-80 md:w-96'
+						className='object-cover object-center w-72 md:w-96'
 						alt='My Pic'
 					/>
 				</div>
