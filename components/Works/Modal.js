@@ -27,7 +27,7 @@ const Modal = ({ show, onClose, data, currentId }) => {
 							onClick={onClose}
 						/>
 					</div>
-					<div className='relative w-96 h-80'>
+					<div className='relative h-80'>
 						<Image
 							src={`http:${data[currentId].fields.image.fields.file.url}`}
 							alt={data[currentId].fields.image.fields.title}
