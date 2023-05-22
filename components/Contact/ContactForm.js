@@ -118,7 +118,7 @@ const ContactForm = () => {
 						className={`px-5 py-2 text-2xl font-bold rounded-md ${
 							isValid
 								? 'text-green ring-2 ring-green hover:text-green-100 hover:ring-green-100 cursor-pointer'
-								: 'text-gray ring-2 ring-gray cursor-default'
+								: 'text-gray ring-2 ring-gray cursor-not-allowed'
 						} `}
 					>
 						Submit

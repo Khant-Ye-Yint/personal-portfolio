@@ -15,7 +15,7 @@
 }
 
 .form-field {
-	@apply px-3 py-2 overflow-hidden bg-black rounded-md ring-1 ring-gray text-gray;
+	@apply px-3 py-2 overflow-hidden bg-black rounded-md border-[1.5px] border-gray ring-0 text-gray;
 }
 
 .error-message {
